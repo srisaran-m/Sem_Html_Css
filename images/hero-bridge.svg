@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300" width="450" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="100%" stop-color="#2a5298"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#f1c40f"/>
+    </linearGradient>
+  </defs>
+  <rect width="450" height="300" rx="8" fill="url(#bg)"/>
+  <circle cx="225" cy="120" r="65" fill="url(#sun)" opacity="0.85"/>
+  <path d="M-20 220 L100 150 L200 210 L310 130 L470 230 L470 300 L-20 300 Z" fill="#162b50" opacity="0.9"/>
+  <path d="M30 250 Q225 150 420 250" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <path d="M30 258 Q225 158 420 258" fill="none" stroke="#f1c40f" stroke-width="3"/>
+  <line x1="110" y1="203" x2="110" y2="255" stroke="#f1c40f" stroke-width="3"/>
+  <line x1="160" y1="178" x2="160" y2="255" stroke="#f1c40f" stroke-width="3"/>
+  <line x1="225" y1="168" x2="225" y2="255" stroke="#ffffff" stroke-width="4"/>
+  <line x1="290" y1="178" x2="290" y2="255" stroke="#f1c40f" stroke-width="3"/>
+  <line x1="340" y1="203" x2="340" y2="255" stroke="#f1c40f" stroke-width="3"/>
+  <rect y="255" width="450" height="45" fill="#0d1b2a"/>
+  <path d="M0 265 Q112 260 225 265 T450 265" fill="none" stroke="#64b5f6" stroke-width="2" opacity="0.5"/>
+  <path d="M0 280 Q112 275 225 280 T450 280" fill="none" stroke="#64b5f6" stroke-width="1.5" opacity="0.3"/>
+  <polygon points="90,95 125,80 160,95 125,110" fill="#ffffff"/>
+  <polygon points="105,103 125,113 145,103 145,118 125,128 105,118" fill="#ffd54f"/>
+  <path d="M155 97 L162 118" stroke="#ffd54f" stroke-width="2"/>
+  <path d="M305 75 L335 65 L365 75 C365 105 335 125 335 125 C335 125 305 105 305 75 Z" fill="#27ae60"/>
+  <path d="M325 95 L332 102 L347 87" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="225" y="285" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1">BENEFIT BRIDGE - SCHOLARSHIPS &amp; WELFARE PORTAL</text>
+</svg>

@@ -1,0 +1,983 @@
+/* -------------------------------------------------------------
+   Benefit Bridge - Content Stylesheet (content.css)
+   Targeted for Content Pages (scholarships.html & schemes.html)
+   Implements 2-column layout with responsive media queries,
+   multi-column article, figure with caption, and pure CSS Carousel
+   ------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-dark: #1b2a47;
+  --primary-red: #8b1e1e;
+  --primary-gradient: linear-gradient(135deg, #5c0f0f 0%, #8b1e1e 50%, #b82e2e 100%);
+  --accent-gold: #f5b041;
+  --accent-gold-hover: #f39c12;
+  --nav-bg: #141414;
+  --nav-hover: #2d2d2d;
+  --nav-active: #8b1e1e;
+  --bg-page: #e8ecf1;
+  --bg-container: #ffffff;
+  --text-main: #2c3e50;
+  --text-muted: #596a7a;
+  --heading-color: #7a1616;
+  --border-light: #d6dbdf;
+  --sidebar-bg: #f8f9fa;
+  --shadow-main: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Base Body */
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  padding: 20px 10px;
+  margin: 0;
+}
+
+/* ==========================================
+   Bootstrap Carousel - Schemes Page
+========================================== */
+
+#page-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  background-color: var(--bg-container);
+  border: 1px solid #c5cbd3;
+  box-shadow: var(--shadow-main);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* Header & Gradient */
+header {
+  background: var(--primary-gradient);
+  color: #ffffff;
+  padding: 24px 30px 20px 30px;
+  border-bottom: 3px solid var(--accent-gold);
+}
+
+.header-branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.header-logo-group img {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.site-title {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+
+.site-tagline {
+  font-size: 0.92rem;
+  color: #f7d794;
+  margin: 4px 0 0 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+
+
+/* Navigation Menu */
+nav.main-nav {
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid #333333;
+}
+
+nav.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav.main-nav li {
+  margin: 0;
+}
+
+nav.main-nav a {
+  display: block;
+  padding: 13px 15px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-right: 1px solid #292929;
+  transition: all 0.2s;
+}
+
+nav.main-nav a:hover {
+  background-color: var(--nav-hover);
+  color: var(--accent-gold);
+}
+
+nav.main-nav a.active {
+  background-color: var(--nav-active);
+  color: #ffffff;
+  border-bottom: 3px solid var(--accent-gold);
+}
+
+/* Navigation Dropdown Menu (Native HTML5 Details & Summary: Strict HTML & CSS Click Toggle) */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-details {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Summary element replaces the toggle button */
+.dropdown-summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 13px 15px;
+  color: #e0e0e0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-right: 1px solid #292929;
+  cursor: pointer;
+  user-select: none;
+  list-style: none !important;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.dropdown-summary::marker {
+  display: none !important;
+  content: "" !important;
+}
+
+.dropdown-summary:hover {
+  background-color: var(--nav-hover);
+  color: var(--accent-gold);
+}
+
+.dropdown-summary .arrow-down {
+  font-size: 0.72rem;
+  transition: transform 0.25s ease;
+}
+
+/* When details is open (after user clicks summary) */
+.nav-details[open] > .dropdown-summary {
+  background-color: #272727;
+  color: var(--accent-gold);
+}
+
+.nav-details[open] > .dropdown-summary .arrow-down {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu - native details hides it when closed, displays when open */
+.nav-details .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 290px;
+  background-color: #181818;
+  border-top: 3px solid var(--accent-gold);
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-bottom: 2px solid #333333;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 4px 0;
+  list-style: none;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  border-right: none;
+  border-bottom: 1px solid #282828;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #272727;
+  color: var(--accent-gold);
+  padding-left: 22px;
+}
+
+.dropdown-menu a .ext-icon {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-left: 8px;
+}
+
+.dropdown-menu a:hover .ext-icon {
+  color: var(--accent-gold);
+}
+
+/* Breadcrumb */
+.breadcrumb-bar {
+  background-color: #f1f4f8;
+  padding: 8px 25px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.breadcrumb-bar a {
+  color: var(--heading-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   2-Column Content Layout (Desktop & Tablet)
+   Aside (Left) | Main Section (Right)
+   ========================================== */
+
+.content-row {
+  padding: 22px 20px 28px 20px;
+}
+
+.content-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Left Aside */
+aside.content-aside {
+  float: left;
+  width: 28%;
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 16px 14px;
+  box-sizing: border-box;
+}
+
+/* Right Main Content */
+main.content-main {
+  float: right;
+  width: 70%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1.page-title {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.85rem;
+  color: var(--heading-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+h2.section-heading {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.28rem;
+  color: var(--primary-dark);
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--primary-red);
+  padding-left: 10px;
+}
+
+h3.sidebar-heading {
+  font-size: 1rem;
+  color: var(--heading-color);
+  margin-top: 0;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--primary-red);
+  padding-bottom: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h3.sidebar-heading.mt-4 {
+  margin-top: 22px;
+}
+
+/* Sidebar Image Links List (Matching Page 5 & 6) */
+.sidebar-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-media-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e3e7ec;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.sidebar-media-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  transform: translateX(3px);
+}
+
+.sidebar-thumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  display: block;
+}
+
+.sidebar-media-text {
+  flex-grow: 1;
+}
+
+.sidebar-media-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #1b4f72;
+  display: block;
+  line-height: 1.25;
+}
+
+.sidebar-media-subtitle {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+/* Figure & Caption Styling (As per PDF page 5 & 6) */
+figure.article-figure {
+  margin: 0 0 18px 0;
+  border: 1px solid #c9d2db;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+figure.article-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption.figure-caption {
+  font-size: 0.84rem;
+  color: #334155;
+  background-color: #f1f5f9;
+  padding: 8px 14px;
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* 2-Column Article Text in Section (Page 5 & 6 requirement) */
+.two-column-article {
+  column-count: 2;
+  column-gap: 24px;
+  column-rule: 1px solid #e2e8f0;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+.two-column-article p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* Age Category Detail Grid */
+.age-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.age-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--primary-red);
+  border-radius: 5px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.age-card.gold-border {
+  border-top-color: var(--accent-gold-hover);
+}
+
+.age-card.navy-border {
+  border-top-color: #1b4f72;
+}
+
+.age-card.green-border {
+  border-top-color: #27ae60;
+}
+
+.age-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.age-card-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.age-pill {
+  background-color: #f1f5f9;
+  color: var(--primary-red);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+.age-card-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.age-card-benefits li {
+  font-size: 0.84rem;
+  color: var(--text-main);
+  padding: 3px 0;
+  line-height: 1.4;
+}
+
+.age-card-benefits li::before {
+  content: "✔ ";
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* ======================================================
+   BOOTSTRAP CAROUSEL - STRICTLY HTML & CSS (ZERO JS)
+   Uses native Bootstrap markup and styling classes.
+   Radio inputs toggle slides, controls, and indicators.
+   ====================================================== */
+
+#schemesCarousel.carousel {
+  position: relative;
+  width: 100%;
+  margin: 10px 0 24px 0;
+  background-color: #111111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden radio inputs */
+.carousel-radio-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: -1;
+  margin: 0;
+}
+
+/* Carousel track */
+#schemesCarousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+
+/* Carousel items */
+#schemesCarousel .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  float: none;
+  margin-right: 0;
+}
+
+#schemesCarousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background-color: #111111;
+}
+
+/* Toggle active slide based on checked radio button */
+#carousel-slide-1:checked ~ .carousel-inner #c-item-1,
+#carousel-slide-2:checked ~ .carousel-inner #c-item-2,
+#carousel-slide-3:checked ~ .carousel-inner #c-item-3 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2;
+}
+
+/* Bootstrap Carousel Controls (Labels acting as Prev/Next buttons) */
+#schemesCarousel .carousel-control-prev,
+#schemesCarousel .carousel-control-next {
+  display: none !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  width: 14%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.65;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+}
+
+#schemesCarousel .carousel-control-prev:hover,
+#schemesCarousel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Show the appropriate control arrows for the active slide */
+#carousel-slide-1:checked ~ .control-for-1,
+#carousel-slide-2:checked ~ .control-for-2,
+#carousel-slide-3:checked ~ .control-for-3 {
+  display: flex !important;
+}
+
+/* Bootstrap Carousel Indicators */
+#schemesCarousel .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 12px;
+  margin-left: 15%;
+  list-style: none;
+  gap: 6px;
+}
+
+#schemesCarousel .carousel-indicators label {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 32px;
+  height: 4px;
+  padding: 0;
+  margin: 0 3px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.45;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+}
+
+#schemesCarousel .carousel-indicators label:hover {
+  opacity: 0.85;
+}
+
+/* Active indicator highlighting */
+#carousel-slide-1:checked ~ .carousel-indicators label[for="carousel-slide-1"],
+#carousel-slide-2:checked ~ .carousel-indicators label[for="carousel-slide-2"],
+#carousel-slide-3:checked ~ .carousel-indicators label[for="carousel-slide-3"] {
+  opacity: 1 !important;
+  background-color: var(--accent-gold, #f5b041) !important;
+}
+
+/* Responsive Heights */
+@media screen and (max-width: 900px) {
+  #schemesCarousel .carousel-inner {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #schemesCarousel .carousel-inner {
+    height: 240px;
+  }
+}
+
+/* Download & Media Resource Links in Aside (Page 7 Specs) */
+.resource-box {
+  background-color: #ffffff;
+  border: 1px solid #dce4ec;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.resource-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 10px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.86rem;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+
+.resource-btn:last-child {
+  margin-bottom: 0;
+}
+
+.resource-btn:hover {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.resource-icon {
+  font-size: 1.25rem;
+  color: var(--primary-red);
+}
+
+.audio-player-container {
+  margin: 10px 0;
+}
+
+.audio-player-container audio {
+  width: 100%;
+  height: 38px;
+}
+
+/* ============================================================
+   Frequently Asked Questions & Accordion 
+   ============================================================ */
+.faq-container {
+  margin: 28px 0 20px 0;
+  padding-top: 15px;
+  border-top: 2px solid #e2e8f0;
+}
+
+.faq-main-heading {
+  font-family: 'Poppins', -apple-system, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #0b3c5d;
+  margin: 0 0 18px 0;
+  letter-spacing: -0.3px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #000000;
+  cursor: pointer;
+  user-select: none;
+  list-style: none !important;
+  outline: none;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none !important;
+}
+
+.faq-question::marker {
+  display: none !important;
+  content: "" !important;
+}
+
+.faq-question:hover {
+  color: #0b3c5d;
+}
+
+.faq-chevron {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #000000;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: #1f2937;
+  padding: 8px 0 10px 0;
+}
+
+.faq-answer p {
+  margin: 0 0 10px 0;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-checklist,
+.faq-steps {
+  margin: 8px 0 10px 0;
+  padding-left: 22px;
+}
+
+.faq-checklist li,
+.faq-steps li {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.faq-checklist li strong,
+.faq-steps li strong {
+  color: #0b3c5d;
+}
+
+.scheme-visual-card {
+  margin: 18px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d5dbdb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  background: #ffffff;
+}
+
+.scheme-visual-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scheme-visual-card .caption {
+  font-size: 0.8rem;
+  color: #555;
+  background: #f8fafc;
+  padding: 6px 12px;
+  font-style: italic;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Footer Styling */
+footer {
+  background: var(--primary-gradient);
+  color: #ffffff;
+  padding: 20px 25px;
+  border-top: 3px solid var(--accent-gold);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer a {
+  color: #f7d794;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav {
+  margin-bottom: 8px;
+}
+
+.footer-nav a {
+  margin: 0 8px;
+  font-weight: 500;
+}
+
+.copyright-text {
+  font-size: 0.82rem;
+  color: #f5f5f5;
+  opacity: 0.95;
+}
+
+/* ==========================================
+   Responsive Design & Media Queries
+   (Desktop -> Tablet Landscape -> Tablet Portrait -> Mobile)
+   ========================================== */
+
+/* Tablet Portrait & Small Landscape (max-width: 900px) */
+@media screen and (max-width: 900px) {
+  aside.content-aside {
+    width: 32%;
+  }
+  main.content-main {
+    width: 68%;
+  }
+  .two-column-article {
+    column-gap: 16px;
+  }
+  .carousel-slides-wrapper {
+    height: 280px;
+  }
+}
+
+/* Tablet Portrait (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .age-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Screen (max-width: 650px) */
+@media screen and (max-width: 650px) {
+  body {
+    padding: 0;
+  }
+  #page-wrapper {
+    border: none;
+    border-radius: 0;
+  }
+  .header-branding {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav.main-nav ul {
+    flex-direction: column;
+  }
+  nav.main-nav a,
+  .dropdown-summary {
+    border-right: none;
+    border-bottom: 1px solid #292929;
+    padding: 10px 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nav-dropdown,
+  .nav-details {
+    position: static;
+    width: 100%;
+  }
+  .nav-details .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background-color: #202020;
+    min-width: 100%;
+    padding: 0;
+  }
+  .dropdown-menu a {
+    padding-left: 28px;
+    font-size: 0.82rem;
+    background-color: #1a1a1a;
+  }
+  aside.content-aside, main.content-main {
+    float: none;
+    width: 100%;
+    padding: 12px 0;
+  }
+  /* Single column article on mobile as demonstrated in Page 6 */
+  .two-column-article {
+    column-count: 1;
+  }
+  .carousel-slides-wrapper {
+    height: 240px;
+  }
+}

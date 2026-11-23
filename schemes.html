@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Welfare Schemes by Age &bull; Benefit Bridge</title>
+  <!-- Stylesheets as specified: normalize.css and content.css -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/content.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Fixed-width and Centered Page Container -->
+  <div id="page-wrapper">
+
+    <!-- Header with Gradient, Logo and Tagline -->
+    <header>
+      <div class="header-branding">
+        <a href="index.html" class="header-logo-group">
+          <img src="images/logo.svg" alt="Benefit Bridge Official Portal Logo">
+          <div>
+            <h1 class="site-title">Benefit Bridge</h1>
+            <p class="site-tagline">Bridging Opportunities, Empowering Futures &bull; Scholarships &amp; Schemes for Every Age</p>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scholarships.html">Student Scholarships</a></li>
+        <li><a href="schemes.html" class="active">Public Welfare Schemes</a></li>
+        <li><a href="#schemes-carousel">Featured Schemes</a></li>
+        <li><a href="#downloads">Resource Guides</a></li>
+        <!-- Useful Links Area with Click Toggle (Native HTML5 Details & Summary) placed right after Resource Guides -->
+        <li class="nav-dropdown">
+          <details class="nav-details">
+            <summary class="dropdown-summary" title="Click to view or hide useful portal links">
+              Useful Links <span class="arrow-down">&#9662;</span>
+            </summary>
+            <ul class="dropdown-menu" id="useful-links" aria-label="Useful Government Portals">
+              <li>
+                <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer">
+                  <span>Tamil Nadu e-Scholarship Portal</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Scholarship Portal (NSP)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>myScheme.gov Portal</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>PM-KISAN Samman Nidhi</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nsap.dord.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Social Assistance (Pensions)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Career Service (NCS)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Breadcrumb Location Indicator -->
+    <div class="breadcrumb-bar">
+      <span>You are here: </span>
+      <a href="index.html">Home</a> &raquo; <strong>Public Welfare Schemes by Age</strong>
+    </div>
+
+    <!-- 2-Column Content Layout: Left Aside | Right Main Section -->
+    <div class="content-row">
+
+      <!-- ================= LEFT ASIDE ================= -->
+      <aside class="content-aside">
+
+        <!-- Mandatory link back to home page as per PDF Page 3 specifications -->
+        <h3 class="sidebar-heading">Navigation</h3>
+        <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+          <li style="padding: 6px 0; border-bottom: 1px dashed #d5dbdb;">
+            <a href="index.html" style="color: var(--heading-color); font-weight: 700; text-decoration: none;">&larr; Back to Home Page</a>
+          </li>
+          <li style="padding: 6px 0; border-bottom: 1px dashed #d5dbdb;">
+            <a href="scholarships.html" style="color: #1b4f72; font-weight: 600; text-decoration: none;">&rarr; Student Scholarships Page</a>
+          </li>
+        </ul>
+
+        <!-- Additional Resources: Link to Audio file & Link to PDF file  -->
+        <h3 class="sidebar-heading" id="downloads">Additional Resources</h3>
+        <div class="resource-box">
+
+          <!-- Link to Audio File -->
+          <a href="audio/Benefit_Bridge_Audio_Guide.mp3" download class="resource-btn" id="audio-guide" title="Download Audio Eligibility Narration">
+            <span class="resource-icon">&#9834;</span>
+            <div>
+              <span>Audio Guide (MP3)</span><br>
+              <small style="font-weight: normal; color: var(--text-muted);">Listen to Eligibility Steps</small>
+            </div>
+          </a>
+
+          <!-- Native HTML5 Audio Player (Zero JS) -->
+          <div class="audio-player-container">
+            <label style="font-size: 0.76rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px;">Direct Audio Player:</label>
+            <audio controls preload="none">
+              <source src="audio/Benefit_Bridge_Audio_Guide.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
+          <!-- Link to PDF File -->
+          <a href="docs/benefit-bridge-guide.pdf" download class="resource-btn" title="Download Complete Scheme Handbook in PDF">
+            <span class="resource-icon">&#128196;</span>
+            <div>
+              <span>Scheme Handbook (PDF)</span><br>
+              <small style="font-weight: normal; color: var(--text-muted);">Official 2026 Citizen Directory</small>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Other Scheme Sites / Links with Thumbnails (Page 7 Specs) -->
+        <h3 class="sidebar-heading">Other Scheme Sites:</h3>
+        <ul class="sidebar-media-list">
+          <li>
+            <a href="#youth-schemes" class="sidebar-media-item">
+              <img src="images/thumb-youth-skill.svg" alt="Youth Skill Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Skill &amp; Livelihood</span>
+                <span class="sidebar-media-subtitle">Ages 18&ndash;35 | Free Kits</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#health-schemes" class="sidebar-media-item">
+              <img src="images/thumb-women.svg" alt="Women Healthcare Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Maternity &amp; Nutrition</span>
+                <span class="sidebar-media-subtitle">Ages 18&ndash;50 | Rs. 6,000</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#senior-schemes" class="sidebar-media-item">
+              <img src="images/thumb-senior.svg" alt="Senior Citizen Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Senior Pension Fund</span>
+                <span class="sidebar-media-subtitle">Ages 60+ | Monthly DBT</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#farmer-schemes" class="sidebar-media-item">
+              <img src="images/thumb-farmer.svg" alt="Farmer Agriculture Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Kisan Samman Nidhi</span>
+                <span class="sidebar-media-subtitle">All Farmers | Rs. 6,000/yr</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </aside>
+
+      <!-- ================= RIGHT MAIN SECTION ================= -->
+      <main class="content-main">
+        <h1 class="page-title">Public Welfare &amp; Citizen Schemes by Life Stage</h1>
+
+        
+        <!-- Bootstrap Carousel for Featured Schemes (Strictly HTML & CSS, Zero JS) -->
+        <div id="schemesCarousel" class="carousel slide" aria-label="Featured Welfare Schemes Carousel">
+          <!-- Hidden Radio Selectors for Slide Toggle -->
+          <input type="radio" class="carousel-radio-toggle" name="schemes-carousel-radio" id="carousel-slide-1" checked aria-hidden="true">
+          <input type="radio" class="carousel-radio-toggle" name="schemes-carousel-radio" id="carousel-slide-2" aria-hidden="true">
+          <input type="radio" class="carousel-radio-toggle" name="schemes-carousel-radio" id="carousel-slide-3" aria-hidden="true">
+
+          <!-- Bootstrap Carousel Indicators -->
+          <div class="carousel-indicators">
+            <label for="carousel-slide-1" class="carousel-indicator-btn" aria-label="Slide 1"></label>
+            <label for="carousel-slide-2" class="carousel-indicator-btn" aria-label="Slide 2"></label>
+            <label for="carousel-slide-3" class="carousel-indicator-btn" aria-label="Slide 3"></label>
+          </div>
+
+          <!-- Bootstrap Carousel Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item" id="c-item-1">
+              <img src="images/scheme-carousel-1.svg" class="d-block w-100" alt="Featured Scheme 1: Youth Skill Development and Apprenticeship Training (Ages 18-35)">
+            </div>
+            <div class="carousel-item" id="c-item-2">
+              <img src="images/scheme-carousel-2.svg" class="d-block w-100" alt="Featured Scheme 2: Ayushman Universal Healthcare Protection Cover (All Citizens)">
+            </div>
+            <div class="carousel-item" id="c-item-3">
+              <img src="images/scheme-carousel-3.svg" class="d-block w-100" alt="Featured Scheme 3: Senior Citizen Security & Pension Scheme (Ages 60+)">
+            </div>
+          </div>
+
+          <!-- Bootstrap Carousel Controls for Slide 1 (Prev -> 3, Next -> 2) -->
+          <label for="carousel-slide-3" class="carousel-control-prev control-for-1" aria-label="Previous Scheme">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </label>
+          <label for="carousel-slide-2" class="carousel-control-next control-for-1" aria-label="Next Scheme">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </label>
+
+          <!-- Bootstrap Carousel Controls for Slide 2 (Prev -> 1, Next -> 3) -->
+          <label for="carousel-slide-1" class="carousel-control-prev control-for-2" aria-label="Previous Scheme">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </label>
+          <label for="carousel-slide-3" class="carousel-control-next control-for-2" aria-label="Next Scheme">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </label>
+
+          <!-- Bootstrap Carousel Controls for Slide 3 (Prev -> 2, Next -> 1) -->
+          <label for="carousel-slide-2" class="carousel-control-prev control-for-3" aria-label="Previous Scheme">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </label>
+          <label for="carousel-slide-1" class="carousel-control-next control-for-3" aria-label="Next Scheme">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </label>
+        </div>
+
+        <!-- 2-Column Article Text Below Carousel (Matching Page 7 layout) -->
+        <div class="two-column-article">
+          <p>
+            Government welfare policies are structured to support individuals at each pivotal turning point in their lives. The core objective of Benefit Bridge is to ensure that no citizen remains unaware of the social security nets created for their demographic cohort. From early childhood healthcare and adolescent development to adult entrepreneurship seed funds and dignified retirement pensions, verified government support is ready to be claimed.
+          </p>
+          <p>
+            Applying for modern welfare schemes is streamlined through Direct Benefit Transfer (DBT) and digital identity authentication. By understanding the specific income thresholds, age brackets, and required identification documents for each program, citizens can bypass middlemen and receive direct financial assistance, subsidized insurance coverage, and professional toolkit subsidies deposited directly into their bank accounts.
+          </p>
+        </div>
+
+        <h2 class="section-heading" id="youth-schemes">Comprehensive Public Welfare Breakdown by Age</h2>
+
+        <!-- Age-Wise Schemes Cards Grid -->
+        <div class="age-cards-grid">
+
+          <!-- Card 1: Ages 18 - 35 -->
+          <div class="age-card">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Youth &amp; Skill Development</h3>
+              <span class="age-pill">Ages 18 &ndash; 35</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Employment, Training &amp; Self-Employment</p>
+            <ul class="age-card-benefits">
+              <li><strong>TN Naan Mudhalvan:</strong> Free statewide upskilling in AI, IT, Cloud &amp; core engineering.</li>
+              <li><strong>PMKVY 4.0 &amp; TNSDC:</strong> Free certified industrial training with job placement aid.</li>
+              <li><strong>National Apprenticeship (NAPS):</strong> Rs. 8,000 &ndash; 12,000 monthly DBT stipend.</li>
+              <li><strong>TN Annal Ambedkar Business Champions:</strong> 35% capital subsidy for SC/ST entrepreneurs.</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Ages 18 - 50 -->
+          <div class="age-card gold-border" id="women-schemes">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Women &amp; Family Welfare</h3>
+              <span class="age-pill">Ages 18 &ndash; 50</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Maternity, Basic Income &amp; Women Rights</p>
+            <ul class="age-card-benefits">
+              <li><strong>Kalaignar Magalir Urimai Thogai:</strong> Rs. 1,000/month basic income for women heads.</li>
+              <li><strong>Dr. Muthulakshmi Reddy Maternity:</strong> Rs. 18,000 cash aid + Amma nutrition kit.</li>
+              <li><strong>Vidiyal Payanam:</strong> 100% zero-fare free bus travel for women across Tamil Nadu.</li>
+              <li><strong>TN Vazhndhu Kattuvom Project:</strong> Micro-enterprise enterprise development loans.</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: All Ages -->
+          <div class="age-card navy-border" id="health-schemes">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Universal Healthcare</h3>
+              <span class="age-pill">All Ages / Family</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Cashless Hospitalization &amp; Doorstep Care</p>
+            <ul class="age-card-benefits">
+              <li><strong>TN CMCHIS &amp; Ayushman:</strong> Rs. 5 Lakhs annual cashless treatment per family.</li>
+              <li><strong>Makkalai Thedi Maruthuvam:</strong> Free chronic illness medicines delivered at home.</li>
+              <li><strong>Innuyir Kappom (Nammai Kakkum 48):</strong> Free emergency trauma care for first 48 hours.</li>
+              <li><strong>Jan Aushadhi Kendras:</strong> Quality generic medicines at 50% &ndash; 90% discount.</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Ages 60+ -->
+          <div class="age-card green-border" id="senior-schemes">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Senior Citizen Dignity</h3>
+              <span class="age-pill">Ages 60+ Years</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Pension, Assistive Devices &amp; Nutrition</p>
+            <ul class="age-card-benefits">
+              <li><strong>TN Destitute Old Age Pension:</strong> Rs. 1,000 monthly direct bank pension.</li>
+              <li><strong>Annapurna Free Rice:</strong> Free 20 kg monthly rice supplied via Smart PDS cards.</li>
+              <li><strong>Rashtriya Vayoshri:</strong> Free wheelchairs, walking sticks, spectacles &amp; dentures.</li>
+              <li><strong>Senior Citizen Savings Scheme:</strong> High 8.2% guaranteed quarterly interest rate.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Tamil Nadu Women Basic Income Rights Scheme Banner -->
+        <div class="scheme-visual-card">
+          <img src="images/tn-magalir-urimai.svg" alt="Tamil Nadu Kalaignar Magalir Urimai Thogai Thittam">
+          <div class="caption">Tamil Nadu Flagship: Kalaignar Magalir Urimai Thogai &ndash; Rs. 1,000 monthly basic income for women</div>
+        </div>
+
+        <h2 class="section-heading" id="farmer-schemes">Agricultural &amp; Rural Livelihood Schemes</h2>
+        <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-main);">
+          For farming households in Tamil Nadu, the <strong>Agricultural Mechanization Scheme</strong> offers up to 90% loan assistance with 40% &ndash; 50% capital subsidies for purchasing modern power tillers, tractors, and rotary tillers. In addition, the <strong>Kalaignarin All Village Integrated Agriculture Development Programme (KAVIADP)</strong> provides free farm electricity, solar pumps, and direct PM-KISAN quarterly installments of Rs. 6,000 annually.
+        </p>
+
+        <!-- Tamil Nadu Farmer Mechanization Scheme Banner Image -->
+        <div class="scheme-visual-card">
+          <img src="images/tn-farmer-tiller.svg" alt="Tamil Nadu Agricultural Mechanization and Power Tiller Scheme">
+          <div class="caption">Tamil Nadu Agricultural Engineering Department: Up to 90% Power Tiller Loan &amp; Mechanization Subsidy</div>
+        </div>
+
+        <!-- ============================================================
+             FREQUENTLY ASKED QUESTIONS 
+             Native HTML5 Details & Summary Accordion 
+             ============================================================ -->
+        <div class="faq-container">
+          <h2 class="faq-main-heading">Frequently Asked Questions</h2>
+          <div class="faq-list">
+
+            <!-- Question 1: (Expanded by default with open) -->
+            <details class="faq-item" open>
+              <summary class="faq-question">
+                <span>What is the objective of this scheme?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>The scheme offers loans to farmers covering up to 90% of the cost of a power tiller, with an interest rate between 11% and 12.25%.</p>
+              </div>
+            </details>
+
+            <!-- Question 2: -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Who is eligible for this scheme?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Individual farmers, joint liability groups, small and marginal farmers, and women agricultural entrepreneurs possessing cultivable landholding in Tamil Nadu and across verified state registries are eligible.</p>
+              </div>
+            </details>
+
+            <!-- Question 3:  -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>What is the purpose of this loan?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>The purpose of this loan and capital subsidy is to encourage agricultural mechanization, reduce farm labor dependency, and enhance timely tilling and sowing operations across agricultural lands.</p>
+              </div>
+            </details>
+
+            <!-- Question 4: -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>What percentage of the power tiller’s cost is covered by the loan?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Up to 90% of the total on-road price of the power tiller equipment is covered under bank loan assistance, with the remaining 10% paid as farmer margin contribution.</p>
+              </div>
+            </details>
+
+            <!-- Question 5: Required Documents Checklist -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>What documents are needed to apply online for welfare &amp; agricultural schemes?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Applicants must keep the following documents scanned and ready before filing an online scheme application:</p>
+                <ul class="faq-checklist">
+                  <li><strong>Aadhaar Card:</strong> Primary identification linked to active mobile number for OTP e-KYC.</li>
+                  <li><strong>Smart Family Card (Ration Card):</strong> Proof of household composition and residence in Tamil Nadu.</li>
+                  <li><strong>Patta / Chitta &amp; Adangal Extracts:</strong> Certified land ownership records for farm machinery and crop compensation schemes.</li>
+                  <li><strong>Income &amp; Community Certificate:</strong> e-Sevai revenue issued certificates for subsidy quota qualification.</li>
+                  <li><strong>Bank Passbook:</strong> First page with Account number and IFSC code (mandatorily seeded with Aadhaar for DBT transfer).</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Question 6: Step-by-Step Online Application Instructions -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>How to apply online step-by-step on Tamil Nadu / myScheme portal?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Follow these 5 verified steps to submit your welfare scheme application online:</p>
+                <ol class="faq-steps">
+                  <li><strong>Step 1 - Citizen Login:</strong> Visit the <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">myScheme Portal</a> or the Tamil Nadu <a href="https://escholarship.tn.gov.in/" target="_blank" rel="noopener">e-Sevai Citizen Portal</a>.</li>
+                  <li><strong>Step 2 - Aadhaar e-KYC:</strong> Enter your Aadhaar number and submit the 6-digit OTP received on your mobile.</li>
+                  <li><strong>Step 3 - Select Scheme Category:</strong> Navigate to your demographic category (Women, Farmer, Senior Citizen, or Youth) and select the specific scheme.</li>
+                  <li><strong>Step 4 - Upload Scanned Documents:</strong> Attach PDF or JPEG scans of your Smart Card, Patta/Chitta, or Income Certificate (&lt; 200 KB).</li>
+                  <li><strong>Step 5 - Generate Acknowledgment:</strong> Submit the application, note your Application Reference Number (ARN), and track the approval status via SMS alerts.</li>
+                </ol>
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; padding: 16px; background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 5px;">
+          <h4 style="margin: 0 0 8px 0; color: var(--heading-color);">Ready to file your scheme application?</h4>
+          <p style="margin: 0 0 12px 0; font-size: 0.86rem; color: var(--text-muted);">
+            Download our complete 2026 application guide handbook or visit the official single-window government portals below:
+          </p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+            <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 0.82rem; padding: 7px 14px; ">
+              myScheme.gov Portal &#8599;
+            </a>
+            <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.82rem; padding: 7px 14px;">
+              Tamil Nadu Portal &#8599;
+            </a>
+            <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.82rem; padding: 7px 14px;">
+              NSP Portal &#8599;
+            </a>
+            <a href="docs/benefit-bridge-guide.pdf" download class="btn-primary" style="font-size: 0.82rem; padding: 7px 14px;">
+              Download PDF Handbook &raquo;
+            </a>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <!-- Footer with Gradient & Character Entities -->
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Home</a> &bull;
+        <a href="scholarships.html">Student Scholarships</a> &bull;
+        <a href="schemes.html">Public Welfare Schemes</a> &bull;
+        <a href="schemes.html#downloads">Download Handbook</a> &bull;
+        <a href="schemes.html#audio-guide">Audio Guide</a>
+      </div>
+      <div style="margin: 6px 0 10px 0; font-size: 0.8rem; opacity: 0.92;">
+        <strong>Useful Portals: </strong>
+        <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer">Tamil Nadu e-Scholarship</a> &bull;
+        <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer">NSP Portal</a> &bull;
+        <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer">myScheme.gov</a> &bull;
+        <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">PM-KISAN</a> &bull;
+        <a href="https://nsap.dord.gov.in/" target="_blank" rel="noopener noreferrer">NSAP Pensions</a>
+      </div>
+      <p class="copyright-text">
+        &copy; Copyright 2026 Benefit Bridge. All rights reserved. &bull; Universal Citizen Social Security Directory.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

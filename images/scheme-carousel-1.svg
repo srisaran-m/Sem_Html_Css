@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320" width="650" height="320">
+  <defs>
+    <linearGradient id="car1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134e5e"/>
+      <stop offset="100%" stop-color="#71b280"/>
+    </linearGradient>
+  </defs>
+  <rect width="650" height="320" rx="10" fill="url(#car1)"/>
+  <circle cx="560" cy="80" r="110" fill="#ffffff" opacity="0.12"/>
+  <circle cx="110" cy="150" r="60" fill="#ffffff" opacity="0.18"/>
+  <!-- Skill symbol -->
+  <path d="M110 115 L125 145 L145 150 L130 165 L135 185 L110 172 L85 185 L90 165 L75 150 L95 145 Z" fill="#ffd54f"/>
+  <text x="200" y="75" fill="#ffd54f" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="1">AGE GROUP 18 - 35 YEARS</text>
+  <text x="200" y="112" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">Youth Skill &amp; National Apprenticeship</text>
+  <text x="200" y="145" fill="#f0fff4" font-family="sans-serif" font-size="14">&#8226; Free government certified training in AI, IT, Solar &amp; Core trades</text>
+  <text x="200" y="172" fill="#f0fff4" font-family="sans-serif" font-size="14">&#8226; Monthly Direct Benefit Transfer (DBT) stipend of Rs. 8,000 - 12,000</text>
+  <text x="200" y="199" fill="#f0fff4" font-family="sans-serif" font-size="14">&#8226; Industry recognized credential with direct job placement drives</text>
+  <rect x="200" y="225" width="200" height="36" rx="6" fill="#ffd54f"/>
+  <text x="300" y="248" text-anchor="middle" fill="#134e5e" font-family="sans-serif" font-size="13" font-weight="bold">Check Eligibility &amp; Apply</text>
+  <text x="325" y="300" text-anchor="middle" fill="#d4edda" font-family="sans-serif" font-size="12">Featured Scheme 1: Youth Empowerment &amp; Skill Development Mission</text>
+</svg>

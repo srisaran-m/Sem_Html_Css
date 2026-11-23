@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320" width="650" height="320">
+  <defs>
+    <linearGradient id="car3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1c71"/>
+      <stop offset="100%" stop-color="#d76d77"/>
+    </linearGradient>
+  </defs>
+  <rect width="650" height="320" rx="10" fill="url(#car3)"/>
+  <circle cx="100" cy="240" r="100" fill="#ffffff" opacity="0.1"/>
+  <circle cx="110" cy="150" r="60" fill="#ffffff" opacity="0.18"/>
+  <!-- Senior symbol: umbrella / shield -->
+  <path d="M110 120 C85 120 75 145 75 160 L145 160 C145 145 135 120 110 120 Z" fill="#ffd54f"/>
+  <line x1="110" y1="110" x2="110" y2="120" stroke="#ffd54f" stroke-width="3"/>
+  <path d="M110 160 L110 180 C110 188 100 188 100 180" fill="none" stroke="#ffd54f" stroke-width="3"/>
+  <text x="200" y="75" fill="#ffd54f" font-family="sans-serif" font-size="13" font-weight="bold" letter-spacing="1">SENIOR CITIZENS (AGES 60+ YEARS)</text>
+  <text x="200" y="112" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">Senior Citizen Security &amp; Pension Scheme</text>
+  <text x="200" y="145" fill="#fdf0ed" font-family="sans-serif" font-size="14">&#8226; Guaranteed monthly pension of Rs. 1,500 - 3,500 directly in bank</text>
+  <text x="200" y="172" fill="#fdf0ed" font-family="sans-serif" font-size="14">&#8226; Free geriatric wellness, spectacles, hearing aids &amp; mobility kits</text>
+  <text x="200" y="199" fill="#fdf0ed" font-family="sans-serif" font-size="14">&#8226; Legal assistance, high FD interest rates &amp; concession in transport</text>
+  <rect x="200" y="225" width="200" height="36" rx="6" fill="#ffd54f"/>
+  <text x="300" y="248" text-anchor="middle" fill="#3a1c71" font-family="sans-serif" font-size="13" font-weight="bold">Enroll For Pension Scheme</text>
+  <text x="325" y="300" text-anchor="middle" fill="#fce4ec" font-family="sans-serif" font-size="12">Featured Scheme 3: Senior Citizen Dignity &amp; Livelihood Support</text>
+</svg>

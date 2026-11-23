@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+  <rect width="70" height="70" rx="6" fill="#27ae60"/>
+  <circle cx="35" cy="24" r="9" fill="#ffffff"/>
+  <path d="M28 49 L32 37 L38 37 L42 49" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <text x="35" y="63" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="bold">Ages 60+</text>
+</svg>

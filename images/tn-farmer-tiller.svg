@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <linearGradient id="tnBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#145a32"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="280" rx="8" fill="url(#tnBg3)"/>
+  <circle cx="470" cy="70" r="110" fill="#ffffff" opacity="0.1"/>
+  <!-- Tractor / Power Tiller Graphic -->
+  <g transform="translate(35, 60)">
+    <circle cx="50" cy="115" r="32" fill="#333333" stroke="#f1c40f" stroke-width="4"/>
+    <circle cx="50" cy="115" r="14" fill="#ffffff"/>
+    <circle cx="115" cy="125" r="22" fill="#333333" stroke="#f1c40f" stroke-width="3"/>
+    <circle cx="115" cy="125" r="10" fill="#ffffff"/>
+    <!-- Chassis -->
+    <rect x="35" y="80" width="80" height="28" rx="4" fill="#f39c12"/>
+    <polygon points="40,80 65,45 85,45 85,80" fill="#ffd54f"/>
+    <!-- Exhaust and steering -->
+    <line x1="95" y1="80" x2="95" y2="55" stroke="#ffffff" stroke-width="4"/>
+    <line x1="60" y1="45" x2="50" y2="35" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  <text x="180" y="55" fill="#ffd54f" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1">TAMIL NADU AGRICULTURAL ENGINEERING DEPT</text>
+  <text x="180" y="85" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">Agricultural Mechanization Scheme</text>
+  <text x="180" y="112" fill="#e8f8f5" font-family="sans-serif" font-size="13">Power Tiller, Tractor &amp; Farm Machinery Subsidy</text>
+  <text x="180" y="142" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; Loans covering up to 90% of the cost of a power tiller</text>
+  <text x="180" y="167" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; Concessional bank interest rate between 11% &amp; 12.25%</text>
+  <text x="180" y="192" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; 40%&#8211;50% direct capital subsidy for SC/ST, women &amp; small farmers</text>
+  <rect x="180" y="215" width="220" height="34" rx="4" fill="#ffd54f"/>
+  <text x="290" y="237" text-anchor="middle" fill="#145a32" font-family="sans-serif" font-size="12" font-weight="bold">Apply via Uzhavan App / Portal</text>
+</svg>

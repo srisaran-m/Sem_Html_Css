@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" width="680" height="160">
+  <defs>
+    <linearGradient id="stepBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1b2a47"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="160" rx="8" fill="url(#stepBg)"/>
+  
+  <!-- Step 1 -->
+  <g transform="translate(30, 25)">
+    <circle cx="35" cy="35" r="28" fill="#e74c3c"/>
+    <text x="35" y="42" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff">1</text>
+    <text x="75" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">Digital Registration</text>
+    <text x="75" y="48" fill="#cbd5e1" font-family="sans-serif" font-size="11">Aadhaar &amp; Mobile OTP</text>
+    <text x="75" y="63" fill="#ffd54f" font-family="sans-serif" font-size="10">Portal / e-Sevai / UMIS</text>
+  </g>
+  <!-- Arrow 1-2 -->
+  <path d="M210 60 L230 60" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="230,56 238,60 230,64" fill="#f39c12"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(245, 25)">
+    <circle cx="35" cy="35" r="28" fill="#f39c12"/>
+    <text x="35" y="42" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff">2</text>
+    <text x="75" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">Upload Documents</text>
+    <text x="75" y="48" fill="#cbd5e1" font-family="sans-serif" font-size="11">Income, Caste, Marksheet</text>
+    <text x="75" y="63" fill="#ffd54f" font-family="sans-serif" font-size="10">Scan in PDF &lt; 200 KB</text>
+  </g>
+  <!-- Arrow 2-3 -->
+  <path d="M425 60 L445 60" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="445,56 453,60 445,64" fill="#f39c12"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(460, 25)">
+    <circle cx="35" cy="35" r="28" fill="#27ae60"/>
+    <text x="35" y="42" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff">3</text>
+    <text x="75" y="30" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">DBT Bank Credit</text>
+    <text x="75" y="48" fill="#cbd5e1" font-family="sans-serif" font-size="11">Direct Bank Transfer</text>
+    <text x="75" y="63" fill="#ffd54f" font-family="sans-serif" font-size="10">Zero Middlemen &#8226; SMS Alert</text>
+  </g>
+  
+  <text x="340" y="135" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="11" letter-spacing="0.5">
+    Standard Single-Window Online Application Pipeline &#8226; Benefit Bridge Portal
+  </text>
+</svg>

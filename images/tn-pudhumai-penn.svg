@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <linearGradient id="tnBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800020"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="280" rx="8" fill="url(#tnBg1)"/>
+  <circle cx="450" cy="80" r="110" fill="#ffffff" opacity="0.1"/>
+  <circle cx="80" cy="210" r="70" fill="#f1c40f" opacity="0.15"/>
+  <!-- Student with Book and Graduation Cap -->
+  <g transform="translate(45, 50)">
+    <circle cx="65" cy="55" r="30" fill="#ffffff"/>
+    <polygon points="65,15 25,32 105,32" fill="#f1c40f"/>
+    <polygon points="35,38 65,48 95,38 95,50 65,60 35,50" fill="#ffffff"/>
+    <!-- Torso -->
+    <path d="M35 125 C35 95 95 95 95 125 Z" fill="#ffffff"/>
+    <!-- Rupee Coins Badge -->
+    <circle cx="105" cy="115" r="22" fill="#ffd54f" stroke="#ffffff" stroke-width="2"/>
+    <text x="105" y="122" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#800020">&#8377;</text>
+  </g>
+  <!-- Content -->
+  <text x="190" y="55" fill="#ffd54f" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1">GOVERNMENT OF TAMIL NADU</text>
+  <text x="190" y="85" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">Pudhumai Penn &amp; Tamil Pudhalvan</text>
+  <text x="190" y="112" fill="#fce4ec" font-family="sans-serif" font-size="13">Higher Education Financial Assurance Schemes</text>
+  <text x="190" y="142" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; &#8377;1,000 monthly DBT to bank accounts until degree completion</text>
+  <text x="190" y="167" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; For girls &amp; boys who studied Classes 6 to 12 in TN Govt schools</text>
+  <text x="190" y="192" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; Covers Engineering, Arts, Science, Medical &amp; Polytechnic ITI</text>
+  <rect x="190" y="215" width="220" height="34" rx="4" fill="#ffd54f"/>
+  <text x="300" y="237" text-anchor="middle" fill="#800020" font-family="sans-serif" font-size="12" font-weight="bold">Apply via UMIS / TN Portal</text>
+</svg>

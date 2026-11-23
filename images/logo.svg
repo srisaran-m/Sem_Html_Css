@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd54f"/>
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ffca28"/>
+    </linearGradient>
+  </defs>
+  <!-- Bridge Icon -->
+  <g transform="translate(10, 8)">
+    <circle cx="22" cy="22" r="21" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <!-- Stylized arch bridge -->
+    <path d="M7 32 Q22 14 37 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M12 32 L12 24 M18 32 L18 20 M26 32 L26 20 M32 32 L32 24" stroke="url(#bridgeGrad)" stroke-width="2" stroke-linecap="round"/>
+    <!-- Rising Sun / Cap -->
+    <circle cx="22" cy="13" r="4" fill="#ffd54f"/>
+  </g>
+  <!-- Text -->
+  <text x="64" y="29" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="800" fill="url(#logoGrad)" letter-spacing="0.5">Benefit<tspan fill="#ffffff">Bridge</tspan></text>
+  <text x="65" y="44" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="500" fill="#f0e6d2" letter-spacing="1.5">CITIZEN &amp; SCHOLARSHIP PORTAL</text>
+</svg>

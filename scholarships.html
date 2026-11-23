@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Scholarships by Age &bull; Benefit Bridge</title>
+  <!-- Stylesheets as specified: normalize.css and content.css -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/content.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+   crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Fixed-width and Centered Page Container -->
+  <div id="page-wrapper">
+
+    <!-- Header with Gradient, Logo and Tagline -->
+    <header>
+      <div class="header-branding">
+        <a href="index.html" class="header-logo-group">
+          <img src="images/logo.svg" alt="Benefit Bridge Official Portal Logo">
+          <div>
+            <h1 class="site-title">Benefit Bridge</h1>
+            <p class="site-tagline">Bridging Opportunities, Empowering Futures &bull; Scholarships &amp; Schemes for Every Age</p>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scholarships.html" class="active">Student Scholarships</a></li>
+        <li><a href="schemes.html">Public Welfare Schemes</a></li>
+        <li><a href="#age-brackets">Age Brackets</a></li>
+        <li><a href="schemes.html#downloads">Resource Guides</a></li>
+        <!-- Useful Links Area with Click Toggle (Native HTML5 Details & Summary) placed right after Resource Guides -->
+        <li class="nav-dropdown">
+          <details class="nav-details">
+            <summary class="dropdown-summary" title="Click to view or hide useful portal links">
+              Useful Links <span class="arrow-down">&#9662;</span>
+            </summary>
+            <ul class="dropdown-menu" id="useful-links" aria-label="Useful Government Portals">
+              <li>
+                <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer">
+                  <span>Tamil Nadu e-Scholarship Portal</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Scholarship Portal (NSP)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>myScheme.gov Portal</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>PM-KISAN Samman Nidhi</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://nsap.dord.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Social Assistance (Pensions)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">
+                  <span>National Career Service (NCS)</span>
+                  <span class="ext-icon">&#8599;</span>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+      <span>You are here: </span>
+      <a href="index.html">Home</a> &raquo; <strong>Student Scholarships by Age</strong>
+    </div>
+
+    <!-- 2-Column Content Layout: Left Aside | Right Main Section -->
+    <div class="content-row">
+
+      <!-- ================= LEFT ASIDE ================= -->
+      <aside class="content-aside">
+
+        <!-- Mandatory link back to home page as per PDF Page 3 specifications -->
+        <h3 class="sidebar-heading">Navigation</h3>
+        <ul style="list-style: none; padding: 0; margin: 0 0 16px 0;">
+          <li style="padding: 6px 0; border-bottom: 1px dashed #d5dbdb;">
+            <a href="index.html" style="color: var(--heading-color); font-weight: 700; text-decoration: none;">&larr; Back to Home Page</a>
+          </li>
+          <li style="padding: 6px 0; border-bottom: 1px dashed #d5dbdb;">
+            <a href="schemes.html" style="color: #1b4f72; font-weight: 600; text-decoration: none;">&rarr; Public Welfare Schemes</a>
+          </li>
+        </ul>
+
+        <!-- List with Image Links in Sidebar (as per PDF Page 5 & 6) -->
+        <h3 class="sidebar-heading">Don't Miss These Grants:</h3>
+        <ul class="sidebar-media-list">
+          <li>
+            <a href="#school-age" class="sidebar-media-item">
+              <img src="images/thumb-school.svg" alt="Pre-Matric School Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Pre-Matric Merit Aid</span>
+                <span class="sidebar-media-subtitle">Ages 5&ndash;14 | Rs. 12,000/yr</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#higher-secondary" class="sidebar-media-item">
+              <img src="images/thumb-higher-ed.svg" alt="Higher Secondary Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Higher Secondary STEM</span>
+                <span class="sidebar-media-subtitle">Ages 15&ndash;18 | Rs. 20,000/yr</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#college-university" class="sidebar-media-item">
+              <img src="images/thumb-youth-skill.svg" alt="Undergrad University Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Central Sector Degree</span>
+                <span class="sidebar-media-subtitle">Ages 18&ndash;25 | Rs. 50,000/yr</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#research-aid" class="sidebar-media-item">
+              <img src="images/thumb-women.svg" alt="Girls & Research Aid Icon" class="sidebar-thumb">
+              <div class="sidebar-media-text">
+                <span class="sidebar-media-title">Pragati &amp; Research Aid</span>
+                <span class="sidebar-media-subtitle">Ages 18&ndash;30 | Full Tuition Free</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <h3 class="sidebar-heading mt-4">Required Documents</h3>
+        <ul style="font-size: 0.84rem; line-height: 1.5; color: var(--text-main); padding-left: 18px; margin: 0;">
+          <li>Aadhaar card / Student ID</li>
+          <li>Previous year marksheet (&gt;60%)</li>
+          <li>Annual family income certificate</li>
+          <li>Active bank account (linked with DBT)</li>
+          <li>Institution bonafide letter</li>
+        </ul>
+      </aside>
+
+      <!-- ================= RIGHT MAIN SECTION ================= -->
+      <main class="content-main">
+        <h1 class="page-title">National &amp; State Student Scholarships by Age</h1>
+
+        <!-- Figure with image and caption as specified on Page 5 & 6 -->
+        <figure class="article-figure">
+          <img src="images/scholarship-banner.svg" alt="Comprehensive overview of scholarship avenues for school, higher secondary and university students">
+          <figcaption class="figure-caption">
+            Comprehensive financial aid avenues across primary, secondary, undergraduate, and postgraduate education stages.
+          </figcaption>
+        </figure>
+
+        <!-- 2-Column Article in Section (Desktop and Tablet Only) -->
+        <div class="two-column-article">
+          <p>
+            Education is the strongest ladder for social mobility, yet thousands of capable students discontinue their studies simply due to financial constraints. The Benefit Bridge student scholarship framework removes this hurdle by categorizing every central, state, and private endowment scholarship into clear, age-specific brackets. From primary school uniforms and textbooks to doctoral research stipends, there is verified financial support ready to accompany every student throughout their academic journey.
+          </p>
+          <p>
+            Students between the ages of 5 and 14 benefit from universal pre-matric allowances, talent search prizes, and special incentives for the girl child. Once students transition into higher secondary education (ages 15 to 18), merit grants recognize high performance in STEM subjects, commerce, and humanities. For undergraduate and postgraduate scholars (ages 18 to 25+), scholarships cover full tuition fees, hostel expenses, and provide monthly living stipends paid directly through DBT.
+          </p>
+        </div>
+
+        <h2 class="section-heading" id="age-brackets">Scholarship Categories by Age Group</h2>
+
+        <!-- Age-Wise Scholarship Cards Grid -->
+        <div class="age-cards-grid">
+
+          <!-- Card 1: Ages 5 - 14 -->
+          <div class="age-card" id="school-age">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Pre-Matric School Aid</h3>
+              <span class="age-pill">Ages 5 &ndash; 14</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Primary &amp; Upper Primary (Classes 1 to 8)</p>
+            <ul class="age-card-benefits">
+              <li><strong>National Means-cum-Merit:</strong> Rs. 12,000/year for qualifying Class 8 exam.</li>
+              <li><strong>Free Uniforms &amp; Textbooks:</strong> 100% covered under Right to Education (RTE).</li>
+              <li><strong>Mid-Day Meal &amp; Health Checks:</strong> Nutritious meals + annual vision screening.</li>
+              <li><strong>Special Girl Child Stipend:</strong> Additional Rs. 3,000 bonus for high attendance.</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Ages 15 - 18 -->
+          <div class="age-card gold-border" id="higher-secondary">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Higher Secondary &amp; STEM</h3>
+              <span class="age-pill">Ages 15 &ndash; 18</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Secondary &amp; Senior Secondary (Classes 9 to 12)</p>
+            <ul class="age-card-benefits">
+              <li><strong>INSPIRE Science Award:</strong> Rs. 10,000 one-time grant for science innovation projects.</li>
+              <li><strong>Post-Matric State Aid:</strong> Up to Rs. 20,000/year for tuition and coaching supplies.</li>
+              <li><strong>KVPY / Olympiad Fellowships:</strong> Full tuition waiver for regional &amp; national rankers.</li>
+              <li><strong>Single Girl Child CBSE Grant:</strong> Rs. 1,000/month for Classes 11 and 12.</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Ages 18 - 25 -->
+          <div class="age-card navy-border" id="college-university">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Undergrad &amp; Professional</h3>
+              <span class="age-pill">Ages 18 &ndash; 25</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">College, University &amp; Technical Diplomas</p>
+            <ul class="age-card-benefits">
+              <li><strong>TN Pudhumai Penn / Tamil Pudhalvan:</strong> Rs. 1,000/month directly to TN govt school students.</li>
+              <li><strong>Central Sector Scheme (NSP):</strong> Rs. 12,000 &ndash; Rs. 20,000/yr for college merit holders.</li>
+              <li><strong>AICTE Pragati for Girls:</strong> Rs. 50,000/year towards college tuition &amp; laptop purchase.</li>
+              <li><strong>TN Post-Matric Welfare Aid:</strong> 100% tuition waiver &amp; hostel fees for eligible communities.</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Ages 25+ -->
+          <div class="age-card green-border" id="research-aid">
+            <div class="age-card-header">
+              <h3 class="age-card-title">Postgrad &amp; Research</h3>
+              <span class="age-pill">Ages 25+ Years</span>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 8px 0;">Master's, M.Phil, Ph.D. &amp; Post-Doc Research</p>
+            <ul class="age-card-benefits">
+              <li><strong>UGC Junior Research Fellowship (JRF):</strong> Rs. 37,000/month + HRA for doctoral scholars.</li>
+              <li><strong>CSIR Research Grant:</strong> Rs. 42,000/month for advanced scientific research.</li>
+              <li><strong>National Overseas Scholarship:</strong> Up to $40,000/year for pursuing masters/PhD abroad.</li>
+              <li><strong>Prime Minister's Research Fellows:</strong> Rs. 70,000 &ndash; 80,000/month for IIT/NIT fellows.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <h2 class="section-heading">How to Apply via Direct Benefit Transfer (DBT)</h2>
+        <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-main);">
+          All central and state government scholarships are administered through unified online portals like the <strong>National Scholarship Portal (NSP)</strong> and state-specific portals like the <strong>Tamil Nadu e-Scholarship Portal</strong>. Ensure that your bank account is active and seeded with your Aadhaar number. When your application is verified by your educational institution and the nodal welfare officer, scholarship amounts are transferred straight to your bank account without any physical cheques or processing fees.
+        </p>
+
+        <!-- Official Portal Direct Access Box -->
+        <div style="background-color: #f1f8fc; border: 1px solid #c8e1f5; border-radius: 6px; padding: 14px 18px; margin: 18px 0;">
+          <h4 style="margin: 0 0 10px 0; color: #1b4f72; font-size: 0.95rem;">Official Application Portals</h4>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 0.82rem; padding: 7px 14px;">
+              Tamil Nadu e-Scholarship &#8599;
+            </a>
+            <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.82rem; padding: 7px 14px;">
+              National Scholarship Portal (NSP) &#8599;
+            </a>
+            <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size: 0.82rem; padding: 7px 14px; ">
+              myScheme.gov Portal &#8599;
+            </a>
+          </div>
+        </div>
+
+        <!-- Tamil Nadu Flagship Higher Education Scheme Banner Image -->
+        <div class="scheme-visual-card">
+          <img src="images/tn-pudhumai-penn.svg" alt="Tamil Nadu Pudhumai Penn and Tamil Pudhalvan Higher Education Assurance Schemes">
+          <div class="caption">Tamil Nadu Government Higher Education Assurance: Rs. 1,000 monthly direct bank transfer</div>
+        </div>
+
+        <!-- ============================================================
+             FREQUENTLY ASKED QUESTIONS
+             ============================================================ -->
+        <div class="faq-container">
+          <h2 class="faq-main-heading">Frequently Asked Questions</h2>
+          <div class="faq-list">
+
+            <!-- Question 1: Objective (Open by default ) -->
+            <details class="faq-item" open>
+              <summary class="faq-question">
+                <span>What is the objective of this scheme?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>The objective of the Tamil Nadu Pudhumai Penn and Tamil Pudhalvan schemes is to eliminate financial dropouts between Class 12 and higher education by providing a monthly allowance of Rs. 1,000 directly to government school students until they complete their undergraduate, diploma, or ITI degree.</p>
+              </div>
+            </details>
+
+            <!-- Question 2: Eligibility -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>Who is eligible for this scheme?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Students (both female and male) who studied in Tamil Nadu Government schools from Classes 6 to 12 and have secured admission into recognized colleges, universities, polytechnics, or ITI institutes are eligible.</p>
+              </div>
+            </details>
+
+            <!-- Question 3: Documents Required -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>What documents are needed to apply for student scholarships?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Students must keep the following documents scanned and ready before filing an online scholarship form:</p>
+                <ul class="faq-checklist">
+                  <li><strong>EMIS Number / Transfer Certificate:</strong> Proof of studying in Tamil Nadu Government schools from Classes 6 to 12.</li>
+                  <li><strong>Aadhaar Card:</strong> Student's individual Aadhaar number linked with an active mobile number.</li>
+                  <li><strong>College Bonafide Certificate:</strong> Signed admission confirmation or current semester ID from college principal.</li>
+                  <li><strong>Bank Passbook:</strong> Active bank account under student's name (must be seeded with Aadhaar for DBT transfer).</li>
+                  <li><strong>Community &amp; Income Certificate:</strong> Revenue department issued digital caste certificate and income slip.</li>
+                  <li><strong>Class 10 &amp; 12 Marksheets:</strong> Official state board or CBSE mark statements.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Question 4: Steps to apply online -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>How to apply online step-by-step?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>Follow these 5 verified steps to submit your scholarship application online:</p>
+                <ol class="faq-steps">
+                  <li><strong>Step 1 - Access Nodal Portal:</strong> Go to the official <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener">Tamil Nadu e-Scholarship Portal</a> or your college's UMIS portal.</li>
+                  <li><strong>Step 2 - Verify EMIS ID:</strong> Enter your 14-digit EMIS ID to automatically fetch verified government school education records.</li>
+                  <li><strong>Step 3 - Enter Bank Account &amp; Aadhaar:</strong> Enter your bank IFSC code and account number, followed by Aadhaar OTP authentication.</li>
+                  <li><strong>Step 4 - College Nodal Verification:</strong> Submit online for instant verification by your college principal or scholarship nodal officer.</li>
+                  <li><strong>Step 5 - Receive Monthly DBT Credit:</strong> Once approved, Rs. 1,000 is credited automatically to your account before the 7th of every month.</li>
+                </ol>
+              </div>
+            </details>
+
+            <!-- Question 5: Disbursement Method -->
+            <details class="faq-item">
+              <summary class="faq-question">
+                <span>How is the scholarship amount credited?</span>
+                <span class="faq-chevron">&#711;</span>
+              </summary>
+              <div class="faq-answer">
+                <p>The financial grant is transferred directly into the student's individual bank savings account via the Public Financial Management System (PFMS) and Direct Benefit Transfer (DBT) with zero transaction fees or intermediaries.</p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <a href="schemes.html" class="resource-btn" style="display: inline-flex; width: auto; padding: 10px 22px; background: var(--primary-gradient); color: #ffffff;">
+            Next: Explore Public Welfare Schemes &raquo;
+          </a>
+        </div>
+      </main>
+
+    </div>
+
+    <!-- Footer with Gradient & Character Entities -->
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Home</a> &bull;
+        <a href="scholarships.html">Student Scholarships</a> &bull;
+        <a href="schemes.html">Public Welfare Schemes</a> &bull;
+        <a href="schemes.html#downloads">Download Handbook</a> &bull;
+        <a href="schemes.html#audio-guide">Audio Guide</a>
+      </div>
+      <div style="margin: 6px 0 10px 0; font-size: 0.8rem; opacity: 0.92;">
+        <strong>Useful Portals: </strong>
+        <a href="https://ssp24-25.tnega.org/institute/dashboard.html?details=undefined/" target="_blank" rel="noopener noreferrer">Tamil Nadu e-Scholarship</a> &bull;
+        <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer">NSP Portal</a> &bull;
+        <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer">myScheme.gov</a> &bull;
+        <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">PM-KISAN</a> &bull;
+        <a href="https://nsap.dord.gov.in/" target="_blank" rel="noopener noreferrer">NSAP Pensions</a>
+      </div>
+      <p class="copyright-text">
+        &copy; Copyright 2026 Benefit Bridge. All rights reserved. &bull; Education &amp; Student Welfare Directory.
+      </p>
+      
+    </footer>
+
+  </div>
+
+</body>
+</html>

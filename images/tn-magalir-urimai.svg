@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <linearGradient id="tnBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a154b"/>
+      <stop offset="100%" stop-color="#911248"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="280" rx="8" fill="url(#tnBg2)"/>
+  <circle cx="460" cy="200" r="120" fill="#ffffff" opacity="0.08"/>
+  <!-- Woman emblem / icon -->
+  <g transform="translate(45, 50)">
+    <circle cx="65" cy="50" r="28" fill="#ffffff"/>
+    <path d="M40 70 Q65 100 90 70" fill="none" stroke="#f1c40f" stroke-width="3"/>
+    <path d="M35 125 C35 90 95 90 95 125 Z" fill="#ffd54f"/>
+    <!-- Rupee Card -->
+    <rect x="80" y="90" width="48" height="32" rx="4" fill="#ffffff" stroke="#911248" stroke-width="2"/>
+    <text x="104" y="112" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#911248">&#8377;1000</text>
+  </g>
+  <text x="190" y="55" fill="#ffd54f" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="1">TAMIL NADU FLAGSHIP WELFARE</text>
+  <text x="190" y="85" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">Kalaignar Magalir Urimai Thogai</text>
+  <text x="190" y="112" fill="#f8bbd0" font-family="sans-serif" font-size="13">Women&#8217;s Monthly Basic Income Rights Scheme</text>
+  <text x="190" y="142" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; &#8377;1,000 every month directly credited via biometric e-KYC</text>
+  <text x="190" y="167" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; Benefiting over 1.15 Crore women household heads across TN</text>
+  <text x="190" y="192" fill="#ffffff" font-family="sans-serif" font-size="13">&#8226; Free zero-balance ATM Rupay debit card provided</text>
+  <rect x="190" y="215" width="220" height="34" rx="4" fill="#ffd54f"/>
+  <text x="300" y="237" text-anchor="middle" fill="#4a154b" font-family="sans-serif" font-size="12" font-weight="bold">Apply at e-Sevai / Portal</text>
+</svg>

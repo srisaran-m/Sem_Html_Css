@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320">
+  <defs>
+    <linearGradient id="gradSch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004e92"/>
+      <stop offset="100%" stop-color="#000428"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="320" rx="8" fill="url(#gradSch)"/>
+  <circle cx="420" cy="60" r="90" fill="#0072ff" opacity="0.15"/>
+  <circle cx="70" cy="260" r="100" fill="#f39c12" opacity="0.12"/>
+  <path d="M180 250 L180 160 L250 110 L320 160 L320 250 Z" fill="#ffffff" opacity="0.9"/>
+  <polygon points="250,75 160,115 340,115" fill="#e74c3c"/>
+  <rect x="200" y="165" width="12" height="85" fill="#004e92"/>
+  <rect x="225" y="165" width="12" height="85" fill="#004e92"/>
+  <rect x="263" y="165" width="12" height="85" fill="#004e92"/>
+  <rect x="288" y="165" width="12" height="85" fill="#004e92"/>
+  <path d="M235 250 L235 200 Q250 185 265 200 L265 250 Z" fill="#000428"/>
+  <polygon points="250,30 200,55 300,55" fill="#f1c40f"/>
+  <line x1="250" y1="30" x2="320" y2="65" stroke="#ffd54f" stroke-width="2"/>
+  <circle cx="320" cy="67" r="3" fill="#ffd54f"/>
+  <rect x="60" y="200" width="75" height="15" rx="3" fill="#e67e22"/>
+  <rect x="65" y="183" width="65" height="15" rx="3" fill="#2ecc71"/>
+  <rect x="70" y="166" width="55" height="15" rx="3" fill="#3498db"/>
+  <rect x="370" y="190" width="60" height="16" rx="4" fill="#ecf0f1"/>
+  <rect x="395" y="187" width="10" height="22" fill="#e74c3c"/>
+  <text x="250" y="295" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">National &amp; State Merit Scholarships (Ages 5-30)</text>
+</svg>
